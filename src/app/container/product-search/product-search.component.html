@@ -1,0 +1,15 @@
+<div class="ecart-search-product">
+  <input class="ecart-search-product-input" [(ngModel)]="searchString" />
+  <button [ngClass]="{
+      btn: true,
+      'btn-search': searchString,
+      'btn-search-disabled': !searchString
+    }" [disabled]="!searchString">
+    Search
+  </button>
+</div>
+<div class="ecart-search-result-for">
+  <p *ngIf="searchString">
+    <strong>Search result for: </strong>{{ searchString }}
+  </p>
+</div>

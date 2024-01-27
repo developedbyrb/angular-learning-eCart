@@ -6,9 +6,10 @@ import { HeaderComponent } from './header/header.component';
 import { TopMenuComponent } from './header/top-menu/top-menu.component';
 import { MainMenuComponent } from './header/main-menu/main-menu.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
-import { ProductListComponent } from './product-list/product-list.component';
-import { ProductSearchComponent } from './product-list/product-search/product-search.component';
+import { ProductListComponent } from './container/product-list/product-list.component';
+import { ProductSearchComponent } from './container/product-search/product-search.component';
 import { FormsModule } from '@angular/forms';
+import { ContainerComponent } from './container/container.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     MainMenuComponent,
     TopHeaderComponent,
     ProductListComponent,
-    ProductSearchComponent
+    ProductSearchComponent,
+    ContainerComponent
   ],
   imports: [
     BrowserModule,
