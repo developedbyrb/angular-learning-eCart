@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { ContainerComponent } from './container/container.component';
 import { ProductComponent } from './container/product-list/product/product.component';
 import { ProductFilterComponent } from './container/product-filter/product-filter.component';
+import { ProductDetailsComponent } from './container/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ProductFilterComponent } from './container/product-filter/product-filte
     ProductSearchComponent,
     ContainerComponent,
     ProductComponent,
-    ProductFilterComponent
+    ProductFilterComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,

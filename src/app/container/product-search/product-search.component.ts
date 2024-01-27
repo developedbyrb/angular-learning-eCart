@@ -10,7 +10,9 @@ export class ProductSearchComponent {
 
   @Output() searchedString: EventEmitter<string> = new EventEmitter<string>();
 
-  searchProductChange() {
+  searchProductChange(inputEl: HTMLInputElement) {
+    console.log(inputEl);
+    this.searchString = inputEl.value;
     this.searchedString.emit(this.searchString);
   }
 }

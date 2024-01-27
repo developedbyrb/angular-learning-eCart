@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Product } from 'src/app/models/product.model';
 
 @Component({
   selector: 'app-product-list',
@@ -6,7 +7,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./product-list.component.scss']
 })
 export class ProductListComponent {
-  productList = [
+  selectedProduct!: Product;
+  productList: Product[] = [
     {
       id: 1,
       name: "Nike React Infinity Run Flyknit",
@@ -61,7 +63,7 @@ export class ProductListComponent {
       gender: "WOMEN",
       category: "RUNNING",
       size: [6, 7, 8, 9, 10],
-      color: ["White", , "Brown", "Red"],
+      color: ["White", "Brown", "Red"],
       price: 180,
       discountPrice: 140,
       is_in_inventory: false,
