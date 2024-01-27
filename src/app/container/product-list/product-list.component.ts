@@ -236,7 +236,7 @@ export class ProductListComponent {
       price: 30,
       is_in_inventory: false,
       items_left: 4,
-      imageURL: "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/BRIDGPORT_ADVICE-BLACK_1_800x800.jpg?v=1576567903",
+      imageURL: "https://m.media-amazon.com/images/I/71USHT16NoL._AC_SR208.5,208.5_QL70_.jpg",
       slug: "bridgport-advice"
     },
     {
@@ -252,7 +252,7 @@ export class ProductListComponent {
       discountPrice: 45,
       is_in_inventory: true,
       items_left: 5,
-      imageURL: "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/Beck-Black_800x800.jpg",
+      imageURL: "https://m.media-amazon.com/images/I/31c1jykiQhL._AC_SR160,160_.jpg",
       slug: "beck"
     },
     {
@@ -267,7 +267,7 @@ export class ProductListComponent {
       price: 70,
       is_in_inventory: true,
       items_left: 6,
-      imageURL: "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/fester-Tan_800x800.jpg?v=1575537531",
+      imageURL: "https://m.media-amazon.com/images/I/412yDyCSezL._AC_SR160,160_.jpg",
       slug: "fester"
     },
     {
@@ -282,7 +282,7 @@ export class ProductListComponent {
       price: 75,
       is_in_inventory: true,
       items_left: 7,
-      imageURL: "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/PIXEL-TAN_800x800.jpg?v=1577420506",
+      imageURL: "https://m.media-amazon.com/images/I/41Zhmf1tkBL._AC_SR160,160_.jpg",
       slug: "pixel"
     },
     {
@@ -298,7 +298,7 @@ export class ProductListComponent {
       discountPrice: 60,
       is_in_inventory: false,
       items_left: 2,
-      imageURL: "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/Austin-Coffee_800x800.jpg?v=1574772988",
+      imageURL: "https://m.media-amazon.com/images/I/31HHaFGxVzL._AC_SR160,160_.jpg",
       slug: "austin"
     },
     {
@@ -313,7 +313,7 @@ export class ProductListComponent {
       price: 30,
       is_in_inventory: true,
       items_left: 6,
-      imageURL: "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/009240000-11-SS-HL-0135-Black_800x800.jpg?v=1572264270",
+      imageURL: "https://m.media-amazon.com/images/I/41B5S-clRmL._AC_SR160,160_.jpg",
       slug: "ss-hl-0135"
     },
     {
@@ -329,7 +329,7 @@ export class ProductListComponent {
       discountPrice: 35,
       is_in_inventory: true,
       items_left: 4,
-      imageURL: "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/009250000-779-SS-HL-0136-Coffee_800x800.jpg?v=1571900372",
+      imageURL: "https://m.media-amazon.com/images/I/31Xju3+TwxL._AC_SR160,160_.jpg",
       slug: "ss-hl-0136"
     },
     {
@@ -344,7 +344,7 @@ export class ProductListComponent {
       price: 35,
       is_in_inventory: true,
       items_left: 3,
-      imageURL: "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/000300242-484-SS-HL-0128-Blue_800x800.jpg?v=1583235174",
+      imageURL: "https://m.media-amazon.com/images/I/41Di-ZGiVIL._AC_SR320,320_.jpg",
       slug: "ss-hl-0128"
     },
     {
@@ -359,7 +359,7 @@ export class ProductListComponent {
       price: 25,
       is_in_inventory: false,
       items_left: 7,
-      imageURL: "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/009170000-479-SS-MS-0075-Red_800x800.jpg?v=1570688687",
+      imageURL: "https://m.media-amazon.com/images/I/31HXlR67SAL._AC_SR320,320_.jpg",
       slug: "ss-ms-0075"
     },
     {
@@ -374,7 +374,7 @@ export class ProductListComponent {
       price: 35,
       is_in_inventory: true,
       items_left: 4,
-      imageURL: "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/009170000-615-SS-MS-0075-TAN_800x800.jpg?v=1570688687",
+      imageURL: "https://m.media-amazon.com/images/I/41ssr5hbmzL._AC_SR320,320_.jpg",
       slug: "ss-ms-0075"
     },
     {
@@ -389,7 +389,7 @@ export class ProductListComponent {
       price: 30,
       is_in_inventory: false,
       items_left: 3,
-      imageURL: "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/SS-PM-0093_1_800x800.jpg?v=1570601253",
+      imageURL: "https://m.media-amazon.com/images/I/51QPbGGF3hL._AC_UL480_FMwebp_QL65_.jpg",
       slug: "ss-pm-0093"
     },
     {
@@ -497,7 +497,7 @@ export class ProductListComponent {
       price: 70,
       is_in_inventory: true,
       items_left: 3,
-      imageURL: "https://assets.reebok.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/7599294868804d78a1b1ab6f01718a5e_9366/Club_C_Revenge_Men's_Shoes_White_FV9877_01_standard.jpg",
+      imageURL: "https://m.media-amazon.com/images/I/61J9cspftkL._SL1500_.jpg",
       slug: "club-c-revenge-mens"
     },
     {
@@ -532,4 +532,14 @@ export class ProductListComponent {
       slug: "michael-feburary-sk8-hi"
     }
   ];
+
+  allProducts = this.productList.length;
+  inStockProducts = this.productList.filter(product => product.is_in_inventory === true).length;
+  outOfStockProducts = this.productList.filter(product => product.is_in_inventory === false).length;
+
+  selectedFilter: string = 'all';
+
+  filterApply(event: string) {
+    this.selectedFilter = event;
+  }
 }
