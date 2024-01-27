@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./container.component.scss']
 })
 export class ContainerComponent {
+  searchedProduct: string = '';
 
+  searchProduct(productName: string) {
+    this.searchedProduct = productName;
+    console.log(this.searchedProduct);
+  }
 }

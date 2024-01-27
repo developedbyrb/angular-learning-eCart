@@ -1,5 +1,5 @@
 <div class="ecart-search-product">
-  <input class="ecart-search-product-input" [(ngModel)]="searchString" />
+  <input class="ecart-search-product-input" [(ngModel)]="searchString" (input)="searchProductChange()" />
   <button [ngClass]="{
       btn: true,
       'btn-search': searchString,

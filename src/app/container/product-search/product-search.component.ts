@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-product-search',
@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class ProductSearchComponent {
   searchString: string = '';
+
+  @Output() searchedString: EventEmitter<string> = new EventEmitter<string>();
+
+  searchProductChange() {
+    this.searchedString.emit(this.searchString);
+  }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-product-list',
@@ -538,6 +538,7 @@ export class ProductListComponent {
   outOfStockProducts = this.productList.filter(product => product.is_in_inventory === false).length;
 
   selectedFilter: string = 'all';
+  @Input() searchedProduct: string = '';
 
   filterApply(event: string) {
     this.selectedFilter = event;
