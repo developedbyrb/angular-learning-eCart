@@ -1,5 +1,6 @@
 <div class="ecart-product-container">
   <app-product-search (searchedString)="searchProduct($event)"></app-product-search>
   <app-product-list [searchedProduct]="searchedProduct" #productListComponent></app-product-list>
-  <app-product-details *ngIf="productListComponent.selectedProduct"></app-product-details>
+  <app-product-details *ngIf="productListComponent.selectedProduct"
+    [productListComponent]="productListComponent"></app-product-details>
 </div>

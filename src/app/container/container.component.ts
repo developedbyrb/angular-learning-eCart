@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @Component({
   selector: 'app-container',
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class ContainerComponent {
   searchedProduct: string = '';
+  @ViewChild('ProductListComponent') productListComponent!: ProductListComponent;
 
   searchProduct(productName: string) {
     this.searchedProduct = productName;
