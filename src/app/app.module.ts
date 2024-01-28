@@ -13,6 +13,8 @@ import { ContainerComponent } from './container/container.component';
 import { ProductComponent } from './container/product-list/product/product.component';
 import { ProductFilterComponent } from './container/product-filter/product-filter.component';
 import { ProductDetailsComponent } from './container/product-details/product-details.component';
+import { ViewChildrenComponent } from './container/view-children/view-children.component';
+import { FeatureProductComponent } from './container/feature-product/feature-product.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ProductDetailsComponent } from './container/product-details/product-det
     ContainerComponent,
     ProductComponent,
     ProductFilterComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    ViewChildrenComponent,
+    FeatureProductComponent
   ],
   imports: [
     BrowserModule,

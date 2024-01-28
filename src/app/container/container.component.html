@@ -3,4 +3,34 @@
   <app-product-list [searchedProduct]="searchedProduct" #productListComponent></app-product-list>
   <app-product-details *ngIf="productListComponent.selectedProduct"
     [productListComponent]="productListComponent"></app-product-details>
+
+  <div class="ecart-featured-product">
+    <div class="heading">
+      <h2>Latest arrival in popular brands</h2>
+    </div>
+
+    <app-feature-product>
+      <h3 class="title">New arrival in nike </h3>
+      <button class="call-to-action">
+        show new arrivals in nike
+      </button>
+    </app-feature-product>
+    <app-feature-product>
+      <h3 class="title">New arrival in puma </h3>
+      <button class="call-to-action">
+        show new arrivals in puma
+      </button>
+    </app-feature-product>
+    <app-feature-product>
+      <h3 class="title">New arrival in adidas </h3>
+      <button class="call-to-action">
+        show new arrivals in adidas
+      </button>
+    </app-feature-product>
+  </div>
+
+  <!-- <ng-container *ngTemplateOutlet="viewChildren"></ng-container> -->
+  <ng-template #viewChildren>
+    <app-view-children></app-view-children>
+  </ng-template>
 </div>
